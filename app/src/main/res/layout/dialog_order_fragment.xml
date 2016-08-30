@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/orderPlus"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/orderNum"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="@style/TextColorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel Order"
+        android:id="@+id/orderBtnDel"
+        android:background="#72231f"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/orderMinus" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/orderMinus"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/orderNum"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="(2)"
+        android:id="@+id/orderNum"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:id="@+id/orderBtnOk"
+        android:background="#72231f"
+        style="@style/TextColorWhite"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/orderPlus" />
+
+</RelativeLayout>

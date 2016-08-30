@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOUR IP ADDRESS IS:  "
+        android:id="@+id/textip"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yourip"
+        android:layout_toRightOf="@+id/textip"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/editIp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ENTER IP  :"
+        android:id="@+id/textView15"
+
+        android:layout_alignTop="@+id/editIp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editIp"
+
+        android:layout_marginTop="68dp"
+        android:layout_below="@+id/textip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/button2"
+        android:onClick="onSaveClicked"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editIp"
+        android:layout_alignRight="@+id/editIp"
+        android:layout_alignEnd="@+id/editIp" />
+</RelativeLayout>

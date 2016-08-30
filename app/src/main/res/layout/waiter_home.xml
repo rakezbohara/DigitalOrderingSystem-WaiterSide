@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/donut">
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:id="@+id/settings"
+        android:background="#72231f"
+        android:layout_below="@+id/infoip"
+        android:layout_toRightOf="@+id/payments"
+        android:layout_toEndOf="@+id/payments" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="New Orders"
+        android:id="@+id/orders"
+        android:background="#72231f"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:id="@+id/payments"
+        android:background="#72231f"
+        android:layout_below="@+id/settings"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        android:id="@+id/signOut"
+        android:background="#72231f"
+        android:layout_below="@+id/payments"
+        android:layout_toLeftOf="@+id/imageView6"
+        android:layout_toStartOf="@+id/imageView6" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:id="@+id/fragmentImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/fragment_background" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:id="@+id/imageView5"
+        android:background="#000"
+        android:layout_below="@+id/fragmentImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView6"
+        android:background="#000"
+        android:layout_below="@+id/orders"
+        android:layout_toRightOf="@+id/settings"
+        android:layout_toEndOf="@+id/settings" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:id="@+id/imageView7"
+        android:background="#000"
+        android:layout_below="@+id/signOut"
+        android:layout_toLeftOf="@+id/textView29"
+        android:layout_toStartOf="@+id/textView29"
+        android:layout_marginTop="45dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:id="@+id/imageView4"
+        android:background="#000"
+        android:layout_alignTop="@+id/imageView6" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customOrdersListView"
+        android:layout_toRightOf="@+id/imageView6"
+        android:layout_toEndOf="@+id/imageView6"
+        android:layout_above="@+id/textView29"
+        android:layout_below="@+id/textView30" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total:"
+        android:id="@+id/textView29"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageView6"
+        android:layout_toEndOf="@+id/imageView6"
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="57dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/frontTotal"
+        android:layout_below="@+id/customOrdersListView"
+        android:layout_toRightOf="@+id/textView29"
+        android:layout_toEndOf="@+id/textView29" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Amt"
+        android:id="@+id/textView30"
+        android:layout_below="@+id/frontTableNum"
+        android:layout_toRightOf="@+id/imageView6"
+        android:layout_toEndOf="@+id/imageView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Item"
+        android:id="@+id/textView31"
+        android:layout_above="@+id/customOrdersListView"
+        android:layout_toRightOf="@+id/textView29"
+        android:layout_toEndOf="@+id/textView29" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="TableNum"
+        android:id="@+id/frontTableNum"
+        android:background="#72231f"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/imageView6"
+        android:layout_toEndOf="@+id/imageView6"
+        android:onClick="shortcut" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="IpAddress"
+        android:id="@+id/infoip"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        style="@style/TextColor" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/waiterHomeListView"
+        android:layout_below="@+id/imageView7"
+        android:layout_toLeftOf="@+id/imageView6"
+        android:layout_toStartOf="@+id/imageView6" />
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name"
+        android:id="@+id/selectedTextViewItemName"
+
+        android:layout_gravity="left"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cost"
+        android:id="@+id/selectedTextViewPrice"
+        android:layout_gravity="right"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Amt"
+        android:id="@+id/selectedTextViewItemAmount"
+        android:layout_marginRight="74dp"
+        android:layout_marginEnd="74dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/selectedTextViewPrice"
+        android:layout_toStartOf="@+id/selectedTextViewPrice" />
+
+    <TextView
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="2"
+        android:id="@+id/selectedTextViewItemCalcAmt"
+        android:layout_below="@+id/selectedTextViewItemAmount"
+        android:layout_toLeftOf="@+id/selectedTextViewItemAmount"
+        android:layout_toStartOf="@+id/selectedTextViewItemAmount" />
+
+    <TextView
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="x"
+        android:id="@+id/textView26"
+        android:layout_below="@+id/selectedTextViewItemAmount"
+        android:layout_toRightOf="@+id/selectedTextViewItemCalcAmt"
+        android:layout_toEndOf="@+id/selectedTextViewItemCalcAmt" />
+
+    <TextView
+
+        android:textStyle="italic"        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="perprice"
+        android:id="@+id/selectedTextViewItemPerPrice"
+        android:layout_below="@+id/selectedTextViewPrice"
+        android:layout_toRightOf="@+id/textView26"
+        android:layout_toEndOf="@+id/textView26" />
+
+</RelativeLayout>

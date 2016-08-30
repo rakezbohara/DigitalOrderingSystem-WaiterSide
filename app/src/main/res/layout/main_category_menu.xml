@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Catagories"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CListView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_below="@+id/tea"
+        android:layout_toRightOf="@+id/textView" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tea"
+        android:id="@+id/tea"
+        android:layout_below="@+id/textView"
+        android:layout_toLeftOf="@+id/CListView"
+        android:layout_marginTop="49dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coffee"
+        android:id="@+id/button3"
+        android:layout_below="@+id/tea"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/CListView"
+        android:layout_toStartOf="@+id/CListView" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drinks"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button3"
+        android:layout_toLeftOf="@+id/CListView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cake"
+        android:id="@+id/button5"
+        android:layout_below="@+id/button4"
+        android:layout_toLeftOf="@+id/CListView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/ic_launcher"
+        android:layout_marginRight="72dp"
+        android:layout_marginEnd="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/CListView"
+        android:layout_alignEnd="@+id/CListView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Category"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/tea"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Customer order list"
+        android:id="@+id/customerOrderList"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Items"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/customerOrderList"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cost"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/customerOrderList"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:id="@+id/selectedItemListView"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:choiceMode="multipleChoice"
+        android:layout_above="@+id/btnCancelAll" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Amount"
+        android:id="@+id/textView25"
+        android:layout_below="@+id/customerOrderList"
+        android:layout_alignRight="@+id/customerOrderList"
+        android:layout_alignEnd="@+id/customerOrderList" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="Cancel All "
+        android:id="@+id/btnCancelAll"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView14"
+        android:layout_alignEnd="@+id/textView14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:id="@+id/imageView12"
+        android:layout_below="@+id/customerOrderList"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#000" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:id="@+id/imageView13"
+        android:background="#000"
+        android:layout_alignTop="@+id/selectedItemListView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

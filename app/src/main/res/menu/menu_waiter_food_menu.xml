@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <item android:id="@+id/nextPage"
+        android:icon="@drawable/forward"
+
+        android:title="@string/abc_action_menu_overflow_description"
+        yourapp:showAsAction="ifRoom"  />
+
+    ...
+</menu>
